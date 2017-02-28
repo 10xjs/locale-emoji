@@ -14,6 +14,7 @@ describe('localeEmoji', function() {
     'EN-US': '🇺🇸',
     'EN-us': '🇺🇸',
     'en-us': '🇺🇸',
+    'sk_Latin_SK': '🇸🇰',
   };
 
   Object.keys(tests).forEach(function(from) {
