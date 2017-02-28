@@ -8,8 +8,12 @@ describe('localeEmoji', function() {
     'de_DE': '🇩🇪',
     'de-CH': '🇨🇭',
     'en': '🇬🇧',
+    'EN': '🇬🇧',
     'en-GB': '🇬🇧',
     'en-US': '🇺🇸',
+    'EN-US': '🇺🇸',
+    'EN-us': '🇺🇸',
+    'en-us': '🇺🇸',
   };
 
   Object.keys(tests).forEach(function(from) {

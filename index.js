@@ -161,12 +161,12 @@ var defautlts = {
 };
 
 module.exports = function(locale) {
-  var split = locale.split(/-|_/);
+  var split = locale.toUpperCase().split(/-|_/);
   var lang = split.shift();
   var code = split.pop();
 
   if (!/^[A-Z]{2}$/.test(code)) {
-    code = defautlts[lang];
+    code = defautlts[lang.toLowerCase()];
   }
 
   if (!code) {
