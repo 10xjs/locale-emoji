@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nealgranger/locale-emoji.git"
+    "url": "git+https://github.com/10xjs/locale-emoji.git"
   },
   "keywords": [
     "emoji",
@@ -20,9 +20,9 @@
   "author": "Neal Granger <neal@nealg.com>",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/nealgranger/locale-emoji/issues"
+    "url": "https://github.com/10xjs/locale-emoji/issues"
   },
-  "homepage": "https://github.com/nealgranger/locale-emoji#readme",
+  "homepage": "https://github.com/10xjs/locale-emoji#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.2.0"

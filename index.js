@@ -1,4 +1,4 @@
-var defautlts = {
+var defaults = {
   af: 'ZA',
   agq: 'CM',
   ak: 'GH',
@@ -166,7 +166,7 @@ module.exports = function(locale) {
   var code = split.pop();
 
   if (!/^[A-Z]{2}$/.test(code)) {
-    code = defautlts[lang.toLowerCase()];
+    code = defaults[lang.toLowerCase()];
   }
 
   if (!code) {
