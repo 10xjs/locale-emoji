@@ -22,4 +22,10 @@ describe('localeEmoji', function() {
       expect(localeEmoji(from)).to.equal(tests[from]);
     });
   });
+
+  it('should return a empty string for invalid input', function() {
+    Object.keys(tests).forEach(function(from) {
+      expect(localeEmoji('potato')).to.equal('');
+    });
+  });
 });
