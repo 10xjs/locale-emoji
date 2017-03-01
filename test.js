@@ -17,10 +17,9 @@ describe('localeEmoji', function() {
     'sk_Latin_SK': '🇸🇰',
   };
 
-  Object.keys(tests).forEach(function(from) {
-    var to = tests[from];
-    it('converts "' + from + '" to ' + to, function() {
-      expect(localeEmoji(from)).to.equal(to);
+  it('converts LCIDs to flag emojis', function() {
+    Object.keys(tests).forEach(function(from) {
+      expect(localeEmoji(from)).to.equal(tests[from]);
     });
   });
 });
