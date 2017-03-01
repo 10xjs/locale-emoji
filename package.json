@@ -4,8 +4,8 @@
   "description": "Convert a locale id string (LCID) to a unicode regional indicator symbol.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test": "./node_modules/.bin/nyc ./node_modules/.bin/mocha",
+    "coveralls": "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "coveralls": "^2.11.16",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "nyc": "^10.1.2"
   }
 }
