@@ -1,4 +1,4 @@
-#locale-emoji
+# locale-emoji
 
 Convert a locale id string (LCID) to a unicode regional indicator symbol.
 
