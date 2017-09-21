@@ -1,4 +1,3 @@
-var expect = require('chai').expect;
 var localeEmoji = require('.');
 
 describe('localeEmoji', function() {
@@ -21,11 +20,11 @@ describe('localeEmoji', function() {
     var to = tests[from];
 
     it(from + ' -> ' + to, function() {
-      expect(localeEmoji(from)).to.equal(to);
+      expect(localeEmoji(from)).toEqual(to);
     });
   });
 
   it('should return a empty string for invalid input', function() {
-    expect(localeEmoji('potato')).to.equal('');
+    expect(localeEmoji('potato')).toEqual('');
   });
 });

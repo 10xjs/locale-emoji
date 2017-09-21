@@ -4,8 +4,7 @@
   "description": "Convert a locale id string (LCID) to a unicode regional indicator symbol.",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/nyc ./node_modules/.bin/mocha",
-    "coveralls": "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -25,9 +24,7 @@
   },
   "homepage": "https://github.com/10xjs/locale-emoji#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
     "coveralls": "^2.11.16",
-    "mocha": "^3.2.0",
-    "nyc": "^10.1.2"
+    "jest": "^21.1.0"
   }
 }
