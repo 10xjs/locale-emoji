@@ -1,4 +1,3 @@
-var expect = require('chai').expect;
 var localeEmoji = require('.');
 
 describe('localeEmoji', function() {
@@ -17,15 +16,15 @@ describe('localeEmoji', function() {
     'sk_Latin_SK': '🇸🇰',
   };
 
-  it('converts LCIDs to flag emojis', function() {
-    Object.keys(tests).forEach(function(from) {
-      expect(localeEmoji(from)).to.equal(tests[from]);
+  Object.keys(tests).forEach(function(from) {
+    var to = tests[from];
+
+    it(from + ' -> ' + to, function() {
+      expect(localeEmoji(from)).toEqual(to);
     });
   });
 
   it('should return a empty string for invalid input', function() {
-    Object.keys(tests).forEach(function(from) {
-      expect(localeEmoji('potato')).to.equal('');
-    });
+    expect(localeEmoji('potato')).toEqual('');
   });
 });
