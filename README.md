@@ -21,5 +21,5 @@ import localeEmoji from 'locale-emoji';
 
 localeEmoji('en-CA'); // 🇨🇦
 localeEmoji('en_CA'); // 🇨🇦
-localeEmoji('en'); // 🇬🇧
+localeEmoji('en'); // 🇺🇸
 ```
