@@ -6,14 +6,16 @@ describe('localeEmoji', function() {
     'de-DE': '🇩🇪',
     'de_DE': '🇩🇪',
     'de-CH': '🇨🇭',
-    'en': '🇬🇧',
-    'EN': '🇬🇧',
+    'en': '🇺🇸',
+    'EN': '🇺🇸',
     'en-GB': '🇬🇧',
     'en-US': '🇺🇸',
     'EN-US': '🇺🇸',
     'EN-us': '🇺🇸',
     'en-us': '🇺🇸',
+    'pt': '🇧🇷',
     'sk_Latin_SK': '🇸🇰',
+    'eo': '',
   };
 
   Object.keys(tests).forEach(function(from) {
