@@ -1,6 +1,6 @@
 {
   "name": "locale-emoji",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Convert a locale id string (LCID) to a unicode regional indicator symbol.",
   "main": "index.js",
   "scripts": {
